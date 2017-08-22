@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PlayUpdateTool">
+    <output-path>D:/tmp_file</output-path>
+    <root id="archive" name="PlayUpdateTool.jar">
+      <element id="module-output" name="PlayUpdateTool" />
+    </root>
+  </artifact>
+</component>

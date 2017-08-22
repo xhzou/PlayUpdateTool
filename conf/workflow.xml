@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 提供宏替换 -->
+<!-- runType = upload,command,shell,ref -->
+<!-- reRty,fatalerror,timeout -->
+<business>
+	<items name="default_base" resName="package">
+		<item runType="upload">C:\Users\Administrator\AppData\Local\Temp\application.zip</item>
+		<item runType="command">cd /home/data/WEB-INF;unzip -o application.zip</item>
+		<item runType="command">ps -ef|grep play|grep -v grep  | awk '{print $2}' | xargs kill -9;ps -ef|grep play</item>
+		<item runType="command">ps -ef|grep java|grep tomcat|awk '{print $2}'|xargs kill -9;</item>
+		<item runType="command">cd /home/tomcat/;. /etc/profile;./bin/startup.sh;</item>
+	</items>
+</business>
